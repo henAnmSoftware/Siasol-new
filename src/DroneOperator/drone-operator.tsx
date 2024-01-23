@@ -241,9 +241,9 @@ export function DroneOperator() {
     <div className="drone-operator">
       <header>Drone Operator instruction</header>
       <section className="instructions-container">
-        <ItemList data={conditions} />
-        <ItemList data={cameraSpecs} />
-        <ItemList data={droneHeight} />
+        <ItemList data={conditions} changeClass={null} />
+        <ItemList data={cameraSpecs} changeClass={null} />
+        <ItemList data={droneHeight} changeClass={null} />
         <FlightPathExamples flightPathExamples={flightPathExamples} />
         {isDesktopResolution ? (
           <FootageExampleWithDownload data={videoFootageExample} />
@@ -252,7 +252,7 @@ export function DroneOperator() {
         )}
         <FootageExampleWithDownload data={orthomosaicPhotoExample} />
         {isDesktopResolution ? (
-          <ItemList data={wrongExamples} />
+          <ItemList data={wrongExamples} changeClass={null} />
         ) : (
           <ItemsSlider data={wrongExamples} />
         )}
@@ -263,7 +263,7 @@ export function DroneOperator() {
             these drones, contact us to find if yours is not on the list.
           </h3>
         </section>
-        <ItemList data={recommendedAddOnCameras} />
+        <ItemList data={recommendedAddOnCameras} changeClass={null} />
         <section className="floating-text">
           If your drone doesn’t have a built-in thermal camera, these add-on
           cameras with a white hot sensor and 640x512px resolution can be used

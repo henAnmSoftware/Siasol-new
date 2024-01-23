@@ -18,7 +18,7 @@ export function ItemsSlider({ data }) {
       >
         {data.content.map((item) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={item.id}>
               <img src={item.iconUrl} />
               <p className="text-container">
                 {item.title ?? ""}

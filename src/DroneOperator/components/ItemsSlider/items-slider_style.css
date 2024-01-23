@@ -42,3 +42,23 @@
 .swiper-pagination-bullet-active {
   background: rgb(250, 153, 36) !important;
 }
+
+@media only screen and (max-width: 767px) {
+  .swiper-slide {
+    padding: 0 50px;
+  }
+  .swiper {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Add your tablet styles here */
+
+  .swiper {
+    width: 80%;
+  }
+  .swiper-slide {
+    padding: 0 50px;
+  }
+}
