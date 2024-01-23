@@ -1,0 +1,94 @@
+.homepage_container {
+  flex: 1;
+  min-width: 375px;
+  /* height: 933px;
+  width: 1468px; */
+}
+
+.bg_container .element {
+  /* margin: 0;
+  padding: 0;
+  /* background-image: url("../assets/about_bg.png");  */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.contact-us-button {
+  border: 2px #fa9924 solid;
+  border-radius: 18px;
+  background: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+h1{
+  font-size: 70px;
+}
+h2 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 35px;
+} 
+h4 {
+  font-size: 30px;
+  font-weight: normal;
+} 
+h5 {
+  font-size: 24px;
+  font-weight: normal; 
+} 
+h6 {
+  font-size: 22px;
+  font-weight: normal; 
+}
+
+button {
+  font-size: 24px;
+  font-weight: normal; 
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1024px) {
+  /* Add your desktop styles here */
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Add your tablet styles here */
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+  /* Add your mobile styles here */
+  h1{
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 35px;
+  }
+  h3 {
+    font-size: 25px;
+  } 
+  h4 {
+    font-size: 20px;
+    font-weight: normal;
+  } 
+  h5 {
+    font-size: 22px;
+    font-weight: normal;
+  } 
+  h6 {
+    font-size: 20px;
+    font-weight: normal; 
+  }
+
+  button {
+    font-size: 22px;
+    font-weight: normal; 
+  }
+}

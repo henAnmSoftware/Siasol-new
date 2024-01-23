@@ -1,0 +1,19 @@
+.drone-operator {
+}
+
+.drone-operator header {
+  background-color: #fa9924;
+  /* font-family: Inter; */
+  font-size: 4.5rem;
+  font-weight: bold;
+  padding: 65px 0;
+  margin-bottom: 120px;
+}
+
+@media only screen and (max-width: 767px) {
+  .drone-operator header {
+    font-size: 40px;
+    padding: 40px 10px;
+    margin-bottom: 60px;
+  }
+}

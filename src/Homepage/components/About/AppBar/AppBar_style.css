@@ -1,0 +1,26 @@
+.MuiAppBar-root {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.MuiMenu-root {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.MuiToolbar-root {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.MuiContainer-root {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.logo {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 66px;
+  width: 66px;
+}

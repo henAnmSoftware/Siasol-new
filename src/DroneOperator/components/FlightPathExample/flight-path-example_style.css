@@ -1,0 +1,40 @@
+.flight-path-container {
+  margin-top: 30px;
+}
+.flight-path-container h2 {
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+.flight-path-container p {
+  font-size: 20px;
+  margin: auto;
+  line-height: 178.9%;
+  margin-bottom: 50px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.example {
+  margin: 50px 0;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  .flight-path-container p {
+    font-size: 16px;
+    padding: 0 30px;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .image-container {
+    max-width: fit-content;
+    padding: 0 30px;
+  }
+}
