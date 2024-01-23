@@ -39,6 +39,10 @@
     margin-bottom: 60px;
   }
 
+  .orange-background-text h3 {
+    padding: 30px 20px;
+  }
+
   .floating-text {
     font-size: 16px;
     width: 90%;

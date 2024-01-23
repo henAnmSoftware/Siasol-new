@@ -1,12 +1,10 @@
-import { useEffect, useState, useRef } from "react";
 import { useMatchMedia } from "../../../hooks/useMatchMedia.js";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { ImageSlider } from "../ImageSlider/ImageSlider";
 
 import "./flight-path-example_style.css";
 
 export function FlightPathExamples({ flightPathExamples }) {
-  const isDesktopResolution = useMatchMedia("(min-width:992px)", true);
+  const isDesktopResolution = useMatchMedia("(min-width:1024px)", true);
 
   return (
     <div className="flight-path-container">

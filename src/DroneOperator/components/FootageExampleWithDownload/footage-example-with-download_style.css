@@ -1,0 +1,39 @@
+.footage-with-download {
+  margin-bottom: 100px;
+}
+.footage-with-download h2 {
+  margin-bottom: 20px;
+}
+
+.examples {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.examples .example {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 15px;
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+
+.examples .example img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .examples {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .examples {
+    width: 80%;
+    margin: auto;
+  }
+}

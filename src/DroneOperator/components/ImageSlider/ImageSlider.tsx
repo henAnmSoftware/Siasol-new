@@ -2,13 +2,17 @@ import { useState } from "react";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import KeyboardArrowLeftIcon from "@mui/icons-material/KeyboardArrowLeft";
 import "./image-slider_style.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
 
 export function ImageSlider({ imageUrls }) {
   const [imageIndex, setImageIndex] = useState(0);
 
   return (
     <div className="image-slider">
-      <div className="image">
+      {/* <div className="image">
         <img src={imageUrls[imageIndex]} />
         <div className="buttons-container">
           <button
@@ -24,7 +28,22 @@ export function ImageSlider({ imageUrls }) {
             <KeyboardArrowRightIcon />
           </button>
         </div>
-      </div>
+      </div> */}
+      <Swiper
+        pagination={{
+          dynamicBullets: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper"
+      >
+        {imageUrls.map((image, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <img src={image} />
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
     </div>
   );
 }

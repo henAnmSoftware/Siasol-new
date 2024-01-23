@@ -17,23 +17,23 @@ const schema = yup
       .string()
       .matches(nameRegex, "Only English letters")
       .required("Required *"),
-    siteLocation: yup
-      .string()
-      .matches(siteLocationRegex, "Only English letters")
-      .required("Required")
-      .max(600),
-    siteSize: yup
-      .number()
-      .typeError("Please enter a valid number")
-      .transform((value, originalValue) => {
-        // Convert empty string to undefined or null
-        return originalValue === "" ? undefined : value;
-      })
-      .positive("Please enter a positive number")
-      .integer("Please enter an integer")
-      .min(50, "Number must be in the range of 50-1000")
-      .max(1000, "Number must be in the range of 50-1000")
-      .required("Please provide a value"),
+    // siteLocation: yup
+    //   .string()
+    //   .matches(siteLocationRegex, "Only English letters")
+    //   .required("Required")
+    //   .max(600),
+    // siteSize: yup
+    //   .number()
+    //   .typeError("Please enter a valid number")
+    //   .transform((value, originalValue) => {
+    //     // Convert empty string to undefined or null
+    //     return originalValue === "" ? undefined : value;
+    //   })
+    //   .positive("Please enter a positive number")
+    //   .integer("Please enter an integer")
+    //   .min(50, "Number must be in the range of 50-1000")
+    //   .max(1000, "Number must be in the range of 50-1000")
+    //   .required("Please provide a value"),
     email: yup.string().email("must be a valid email").required(),
     phoneNumber: yup
       .number()
@@ -50,7 +50,7 @@ interface IFormInput {
   fullName: string;
   company: string;
   siteLocation: string;
-  siteSize: number;
+  // siteSize: number;
   email: string;
   phoneNumber: number;
 }
@@ -81,18 +81,18 @@ export default function Form() {
           />
           <p>{errors.company?.message}</p>
 
-          <input
+          {/* <input
             placeholder="Site Location"
             {...register("siteLocation", { pattern: /^[A-Za-z]+$/i })}
           />
-          <p>{errors.siteLocation?.message}</p>
+          <p>{errors.siteLocation?.message}</p> */}
 
-          <input
+          {/* <input
             placeholder="Site Size (kWp)"
             type="number"
             {...register("siteSize", { min: 50, max: 1000 })}
           />
-          <p>{errors.siteSize?.message}</p>
+          <p>{errors.siteSize?.message}</p> */}
 
           <input
             placeholder="Email Address"

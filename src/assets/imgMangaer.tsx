@@ -51,6 +51,10 @@ import recommended_add_on_2 from "./recommended_add_on_2.png";
 import recommended_add_on_3 from "./recommended_add_on_3.png";
 import recommended_add_on_4 from "./recommended_add_on_4.png";
 
+import video_footage_example_1 from "./video_footage_example_1.png";
+import video_footage_example_2 from "./video_footage_example_2.png";
+import orthomosaic_photo_example from "./orthomosaic_photo_example.png";
+
 export const condition1 = condition_1;
 export const condition2 = condition_2;
 export const condition3 = condition_3;
@@ -64,21 +68,27 @@ export const flightPathVideoRight = flight_path_video_right;
 export const flightPathVideoLeft = flight_path_video_left;
 export const flightPathOrthomosaicPhotoRight =
   flight_path_orthomosaic_photo_right;
-  export const flightPathOrthomosaicPhotoRLeft =
+export const flightPathOrthomosaicPhotoRLeft =
   flight_path_orthomosaic_photo_left;
-  export const wrongCapture1 = wrong_capture_1;
-  export const wrongCapture2 = wrong_capture_2;
-  export const wrongCapture3 = wrong_capture_3;
-  export const supportedDrones1 = supported_drones_1;
-  export const supportedDrones2 = supported_drones_2;
-  export const supportedDrones3 = supported_drones_3;
-  export const supportedDrones4 = supported_drones_4;
-  export const supportedDrones5 = supported_drones_5;
-  export const supportedDrones6 = supported_drones_6;
-  export const recommendedAddOn1 = recommended_add_on_1;
-  export const recommendedAddOn2 = recommended_add_on_2;
-  export const recommendedAddOn3 = recommended_add_on_3;
-  export const recommendedAddOn4 = recommended_add_on_4;
+
+export const wrongCapture1 = wrong_capture_1;
+export const wrongCapture2 = wrong_capture_2;
+export const wrongCapture3 = wrong_capture_3;
+
+export const supportedDrones1 = supported_drones_1;
+export const supportedDrones2 = supported_drones_2;
+export const supportedDrones3 = supported_drones_3;
+export const supportedDrones4 = supported_drones_4;
+export const supportedDrones5 = supported_drones_5;
+export const supportedDrones6 = supported_drones_6;
+export const recommendedAddOn1 = recommended_add_on_1;
+export const recommendedAddOn2 = recommended_add_on_2;
+export const recommendedAddOn3 = recommended_add_on_3;
+export const recommendedAddOn4 = recommended_add_on_4;
+
+export const orthomosaicPhoto = orthomosaic_photo_example;
+export const videoFootageExample1 = video_footage_example_1;
+export const videoFootageExample2 = video_footage_example_2;
 
 export const siasolLogo = siasol_logo_name_icon;
 export const aboutBG = about_BG;

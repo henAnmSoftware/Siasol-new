@@ -25,15 +25,17 @@ import {
   recommendedAddOn2,
   recommendedAddOn3,
   recommendedAddOn4,
+  videoFootageExample1,
+  videoFootageExample2,
+  orthomosaicPhoto,
 } from "../assets/imgMangaer";
 import "./drone-operator_styles.css";
 import { ItemList } from "./components/ItemList/ItemList";
 import { FlightPathExamples } from "./components/FlightPathExample/FlightPathExample";
 import { ItemsSlider } from "./components/ItemsSlider/ItemsSlider";
+import { FootageExampleWithDownload } from "./components/FootageExampleWithDownload/FootageExampleWithDownload";
 import { useMatchMedia } from "../hooks/useMatchMedia";
-import { FooterSection } from "Homepage/components/Footer/Footer";
-
-
+import { FooterSection } from "./components/Footer/Footer";
 
 const conditions = {
   mainTitle: "Conditions",
@@ -129,96 +131,112 @@ const flightPathExamples = [
 ];
 
 const wrongExamples = {
-
-  mainTitle : "Wrong",
-  content : [
-
-      {id : 1,
-      upperTitle: 'Color',
-      iconUrl : wrongCapture1,
-      content : "Do not use RGB or black hot thermal cameras"
-      },
-      {id : 2,
-          upperTitle: 'Focus',
-      iconUrl : wrongCapture2,
-      content : "Keep your focus on the panels’ plane, not the ground"
-      },
-      {id : 3,
-          upperTitle: 'Angle',
-      iconUrl : wrongCapture3,
-      content : "Keep your camera pointed and perpendicular to the panels."
-      }
-  ]
-}
+  mainTitle: "Wrong",
+  content: [
+    {
+      id: 1,
+      upperTitle: "Color",
+      iconUrl: wrongCapture1,
+      content: "Do not use RGB or black hot thermal cameras",
+    },
+    {
+      id: 2,
+      upperTitle: "Focus",
+      iconUrl: wrongCapture2,
+      content: "Keep your focus on the panels’ plane, not the ground",
+    },
+    {
+      id: 3,
+      upperTitle: "Angle",
+      iconUrl: wrongCapture3,
+      content: "Keep your camera pointed and perpendicular to the panels.",
+    },
+  ],
+};
 const supportedDrones = {
-
-  mainTitle : "Supported Drones",
-  content : [
-
-      {id : 1,
-      title: 'DJI Mavic 3T Enterprise',
-      iconUrl : supportedDrones1,
-      },
-      {id : 2,
-          title: 'DJI Matrice 30T',
-      iconUrl : supportedDrones2,
-
-      },
-      {id : 3,
-          title: 'DJI Matrice 300 RTK + Zenmuse H20T',
-      iconUrl : supportedDrones3,
-      },
-      {
-        id : 4,
-        title: 'Autel EVO II V3 640T',
-        iconUrl : supportedDrones4,
-      },
-      {
-        id : 5,
-        title: 'Teledyne FLIR SIRAS',
-        iconUrl : supportedDrones5,
-      },
-      {
-        id : 6,
-        title: 'Autel EVO Max 4T',
-        iconUrl : supportedDrones6,
-      },
-  ]
-}
+  mainTitle: "Supported Drones",
+  content: [
+    { id: 1, title: "DJI Mavic 3T Enterprise", iconUrl: supportedDrones1 },
+    { id: 2, title: "DJI Matrice 30T", iconUrl: supportedDrones2 },
+    {
+      id: 3,
+      title: "DJI Matrice 300 RTK + Zenmuse H20T",
+      iconUrl: supportedDrones3,
+    },
+    {
+      id: 4,
+      title: "Autel EVO II V3 640T",
+      iconUrl: supportedDrones4,
+    },
+    {
+      id: 5,
+      title: "Teledyne FLIR SIRAS",
+      iconUrl: supportedDrones5,
+    },
+    {
+      id: 6,
+      title: "Autel EVO Max 4T",
+      iconUrl: supportedDrones6,
+    },
+  ],
+};
 const recommendedAddOnCameras = {
+  mainTitle: "Recommended add-on Cameras",
+  content: [
+    {
+      id: 1,
+      title: "DJI Zenmuse XT2",
+      iconUrl: recommendedAddOn1,
+    },
+    {
+      id: 2,
+      title: "DJI Zenmuse H20N",
+      iconUrl: recommendedAddOn2,
+    },
+    {
+      id: 3,
+      title: "DJI Zenmuse H20T",
+      iconUrl: recommendedAddOn3,
+    },
+    {
+      id: 4,
+      title: "Teledyne FLIR Vue TZ20-R",
+      iconUrl: recommendedAddOn4,
+    },
+  ],
+};
 
-  mainTitle : "Recommended add-on Cameras",
-  content : [
+const videoFootageExample = {
+  mainTitle: "Video Footage Example",
+  text: "Expected quality of visual and thermal footage ",
+  content: [
+    {
+      id: 1,
+      title: "Visible",
+      iconUrl: videoFootageExample1,
+    },
+    {
+      id: 2,
+      title: "Thermal",
+      iconUrl: videoFootageExample2,
+    },
+  ],
+};
 
-      {
-        id : 1,
-        title: 'DJI Zenmuse XT2',
-        iconUrl : recommendedAddOn1,
-      },
-      {
-        id : 2,
-        title: 'DJI Zenmuse H20N',
-        iconUrl : recommendedAddOn2,
-
-      },
-      {
-        id : 3,
-        title: 'DJI Zenmuse H20T',
-        iconUrl : recommendedAddOn3,
-      },
-      {
-        id : 4,
-        title: 'Teledyne FLIR Vue TZ20-R',
-        iconUrl : recommendedAddOn4,
-      }
-    
-  ]
-}
-
+const orthomosaicPhotoExample = {
+  mainTitle: "Orthomosaic Photo Example",
+  content: [
+    {
+      id: 1,
+      title: "Expected quality of orthomosaic photo",
+      iconUrl: orthomosaicPhoto,
+    },
+  ],
+};
 
 export function DroneOperator() {
-  const isDesktopResolution = useMatchMedia("(min-width:992px)", true);
-  console.log(isDesktopResolution)
+  const isDesktopResolution = useMatchMedia("(min-width:1024px)", true);
+
   return (
     <div className="drone-operator">
       <header>Drone Operator instruction</header>
@@ -227,12 +245,31 @@ export function DroneOperator() {
         <ItemList data={cameraSpecs} />
         <ItemList data={droneHeight} />
         <FlightPathExamples flightPathExamples={flightPathExamples} />
-        {isDesktopResolution ?  <ItemList data={wrongExamples} /> : <ItemsSlider data={wrongExamples}/>}
-        <ItemList data={supportedDrones} changeClass="items-grid"/>
-        <section className="orange-background-text"><h3>Siasol  supports video and orthomosaic photos taken from all of these drones, contact us to find if yours is not on the list.</h3></section>
+        {isDesktopResolution ? (
+          <FootageExampleWithDownload data={videoFootageExample} />
+        ) : (
+          <ItemsSlider data={videoFootageExample} />
+        )}
+        <FootageExampleWithDownload data={orthomosaicPhotoExample} />
+        {isDesktopResolution ? (
+          <ItemList data={wrongExamples} />
+        ) : (
+          <ItemsSlider data={wrongExamples} />
+        )}
+        <ItemList data={supportedDrones} changeClass="items-grid" />
+        <section className="orange-background-text">
+          <h3>
+            Siasol  supports video and orthomosaic photos taken from all of
+            these drones, contact us to find if yours is not on the list.
+          </h3>
+        </section>
         <ItemList data={recommendedAddOnCameras} />
-        <section className="floating-text">If your drone doesn’t have a built-in thermal camera, these add-on cameras with a white hot sensor and 640x512px resolution can be used with our system</section>
-        <FooterSection/>
+        <section className="floating-text">
+          If your drone doesn’t have a built-in thermal camera, these add-on
+          cameras with a white hot sensor and 640x512px resolution can be used
+          with our system
+        </section>
+        <FooterSection />
       </section>
     </div>
   );
