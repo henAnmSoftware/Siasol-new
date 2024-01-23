@@ -37,6 +37,19 @@ import flight_path_video_left from "./flight_path_video_left.png";
 import flight_path_video_right from "./flight_path_video_right.png";
 import flight_path_orthomosaic_photo_left from "./flight_path_orthomosaic_photo_left.png";
 import flight_path_orthomosaic_photo_right from "./flight_path_orthomosaic_photo_right.png";
+import wrong_capture_1 from "./wrong_capture_1.png";
+import wrong_capture_2 from "./wrong_capture_2.png";
+import wrong_capture_3 from "./wrong_capture_3.png";
+import supported_drones_1 from "./supported_drones_1.png";
+import supported_drones_2 from "./supported_drones_2.png";
+import supported_drones_3 from "./supported_drones_3.png";
+import supported_drones_4 from "./supported_drones_4.png";
+import supported_drones_5 from "./supported_drones_5.png";
+import supported_drones_6 from "./supported_drones_6.png";
+import recommended_add_on_1 from "./recommended_add_on_1.png";
+import recommended_add_on_2 from "./recommended_add_on_2.png";
+import recommended_add_on_3 from "./recommended_add_on_3.png";
+import recommended_add_on_4 from "./recommended_add_on_4.png";
 
 export const condition1 = condition_1;
 export const condition2 = condition_2;
@@ -51,8 +64,21 @@ export const flightPathVideoRight = flight_path_video_right;
 export const flightPathVideoLeft = flight_path_video_left;
 export const flightPathOrthomosaicPhotoRight =
   flight_path_orthomosaic_photo_right;
-export const flightPathOrthomosaicPhotoRLeft =
+  export const flightPathOrthomosaicPhotoRLeft =
   flight_path_orthomosaic_photo_left;
+  export const wrongCapture1 = wrong_capture_1;
+  export const wrongCapture2 = wrong_capture_2;
+  export const wrongCapture3 = wrong_capture_3;
+  export const supportedDrones1 = supported_drones_1;
+  export const supportedDrones2 = supported_drones_2;
+  export const supportedDrones3 = supported_drones_3;
+  export const supportedDrones4 = supported_drones_4;
+  export const supportedDrones5 = supported_drones_5;
+  export const supportedDrones6 = supported_drones_6;
+  export const recommendedAddOn1 = recommended_add_on_1;
+  export const recommendedAddOn2 = recommended_add_on_2;
+  export const recommendedAddOn3 = recommended_add_on_3;
+  export const recommendedAddOn4 = recommended_add_on_4;
 
 export const siasolLogo = siasol_logo_name_icon;
 export const aboutBG = about_BG;
