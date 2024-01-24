@@ -10,7 +10,7 @@ export const NavBar = () => {
   return (
     <div className="nav-bar_container">
       <div className="left-nav">
-        <div className="logo">
+        <div className="nav-bar-logo">
           {/* <img src={siasolLogo} /> */}
           <ReactLogo />
         </div>

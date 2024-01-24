@@ -20,7 +20,7 @@ div {
   flex-direction: row;
 }
 
-.logo {
+.nav-bar_container .logo {
   margin-right: 30px;
 }
 nav {

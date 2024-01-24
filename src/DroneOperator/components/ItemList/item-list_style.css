@@ -12,6 +12,8 @@
   /* align-items: center; */
   justify-content: center;
   gap: 160px;
+  flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .item {
@@ -55,7 +57,8 @@
     margin-bottom: 65px;
   }
   .data-container h2 {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    font-size: 30px;
   }
   .items {
     gap: 30px;
@@ -92,7 +95,7 @@
   }
 }
 
-@media only screen and (max-width: 1023px) {
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
   .data-container {
     width: 90%;
     margin: 100px auto;
@@ -113,5 +116,11 @@
 @media only screen and (max-width: 767px) {
   .items-grid {
     gap: 30px;
+  }
+}
+
+@media only screen and (min-width: 1180px) and (max-width: 1610px) {
+  .items {
+    gap: 50px;
   }
 }

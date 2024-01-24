@@ -12,11 +12,16 @@ export function FlightPathExamples({ flightPathExamples }) {
       {flightPathExamples.map((example) => {
         return (
           <div key={example.id} className="example">
-            <h6>{example.title}</h6>
-            <p>{example.paragraph}</p>
+            <div className="background-color">
+              <h6>
+                <span className="bold">{example.title}</span>
+              </h6>
+              <p>{example.paragraph}</p>
+            </div>
             <div>
               {isDesktopResolution ? (
                 <div className="image-container">
+                  <span></span>
                   <img src={example.imageUrls[0]} />
                   <img src={example.imageUrls[1]} />
                 </div>

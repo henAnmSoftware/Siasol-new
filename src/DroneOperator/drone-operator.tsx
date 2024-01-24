@@ -239,38 +239,40 @@ export function DroneOperator() {
 
   return (
     <div className="drone-operator">
-      <header>Drone Operator instruction</header>
-      <section className="instructions-container">
-        <ItemList data={conditions} changeClass={null} />
-        <ItemList data={cameraSpecs} changeClass={null} />
-        <ItemList data={droneHeight} changeClass={null} />
-        <FlightPathExamples flightPathExamples={flightPathExamples} />
-        {isDesktopResolution ? (
-          <FootageExampleWithDownload data={videoFootageExample} />
-        ) : (
-          <ItemsSlider data={videoFootageExample} />
-        )}
-        <FootageExampleWithDownload data={orthomosaicPhotoExample} />
-        {isDesktopResolution ? (
-          <ItemList data={wrongExamples} changeClass={null} />
-        ) : (
-          <ItemsSlider data={wrongExamples} />
-        )}
-        <ItemList data={supportedDrones} changeClass="items-grid" />
-        <section className="orange-background-text">
-          <h3>
-            Siasol  supports video and orthomosaic photos taken from all of
-            these drones, contact us to find if yours is not on the list.
-          </h3>
+      <div className="scroll">
+        <header>Drone Operator instruction</header>
+        <section className="instructions-container">
+          <ItemList data={conditions} changeClass={null} />
+          <ItemList data={cameraSpecs} changeClass={null} />
+          <ItemList data={droneHeight} changeClass={null} />
+          <FlightPathExamples flightPathExamples={flightPathExamples} />
+          {isDesktopResolution ? (
+            <FootageExampleWithDownload data={videoFootageExample} />
+          ) : (
+            <ItemsSlider data={videoFootageExample} />
+          )}
+          <FootageExampleWithDownload data={orthomosaicPhotoExample} />
+          {isDesktopResolution ? (
+            <ItemList data={wrongExamples} changeClass={null} />
+          ) : (
+            <ItemsSlider data={wrongExamples} />
+          )}
+          <ItemList data={supportedDrones} changeClass="items-grid" />
+          <section className="orange-background-text">
+            <h3>
+              Siasol  supports video and orthomosaic photos taken from all of
+              these drones, contact us to find if yours is not on the list.
+            </h3>
+          </section>
+          <ItemList data={recommendedAddOnCameras} changeClass={null} />
+          <section className="floating-text">
+            If your drone doesn’t have a built-in thermal camera, these add-on
+            cameras with a white hot sensor and 640x512px resolution can be used
+            with our system
+          </section>
+          <FooterSection />
         </section>
-        <ItemList data={recommendedAddOnCameras} changeClass={null} />
-        <section className="floating-text">
-          If your drone doesn’t have a built-in thermal camera, these add-on
-          cameras with a white hot sensor and 640x512px resolution can be used
-          with our system
-        </section>
-        <FooterSection />
-      </section>
+      </div>
     </div>
   );
 }

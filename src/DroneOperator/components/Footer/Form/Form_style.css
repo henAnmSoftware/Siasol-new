@@ -60,6 +60,7 @@ input[type="submit"] {
   font-size: 24px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
   border: none;
+  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {

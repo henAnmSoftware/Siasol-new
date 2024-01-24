@@ -148,4 +148,8 @@ video {
     width: 100px;
     height: 100px;
   }
+
+  .buttons_video_container {
+    gap: 5px;
+  }
 }

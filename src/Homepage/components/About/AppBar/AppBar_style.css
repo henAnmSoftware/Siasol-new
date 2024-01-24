@@ -17,10 +17,45 @@
   background-color: #2d2d2d;
   color: white;
 }
+.css-19r6kue-MuiContainer-root {
+  max-width: none;
+}
+.css-1q39md6-MuiButtonBase-root-MuiButton-root {
+  font-family: Inter !important;
+  font-weight: bold !important;
+  text-transform: none !important;
+  font-size: 16px !important;
+}
+.css-1t6c9ts {
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 15%;
+}
+.css-1q39md6-MuiButtonBase-root-MuiButton-root:last-child {
+  border: #fa9924 2px solid;
+  border-radius: 20px;
+  padding: 5px 30px;
+}
 
-.logo {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: 66px;
-  width: 66px;
+.nav-bar-logo {
+  padding: 5px 0;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+.nav-bar-logo img {
+  height: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .css-1t6c9ts {
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5%;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .css-19r6kue-MuiContainer-root {
+    max-width: none !important;
+  }
 }

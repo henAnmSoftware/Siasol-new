@@ -15,6 +15,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import "./AppBar_style.css";
 import { ReactComponent as ReactLogo } from "../../../../assets/siasol_logo_square.svg";
 import { SvgIcon } from "@mui/material";
+import { siasolLogo } from "assets/imgMangaer";
 
 const pages = [
   { id: "About", name: "About" },
@@ -60,11 +61,17 @@ function ResponsiveAppBar() {
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <div className="logo">
-              <ReactLogo />
+            <div className="nav-bar-logo">
+              {/* <ReactLogo /> */}
+              <img src={siasolLogo} />
             </div>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"

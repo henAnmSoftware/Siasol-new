@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Inter;
+  src: url("./assets/fonts/Inter-Regular.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,4 +16,9 @@ body {
   font-family: sans-serif;
   text-align: center;
   /* min-width: 375px; */
+  font-family: Inter;
+}
+
+.bold {
+  font-weight: bold;
 }
