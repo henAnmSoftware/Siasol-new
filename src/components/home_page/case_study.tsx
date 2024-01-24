@@ -4,8 +4,8 @@ import {
   floatingRightImg,
   groundMoutedLeftImg,
   groundMoutedRightImg,
-} from "../../assets/imgMangaer";
-import "./CaseStudy_style.css";
+} from "../../public/assets/imgMangaer";
+import "./case_study.css";
 
 const caseStudies = [
   {

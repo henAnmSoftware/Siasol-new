@@ -2,7 +2,7 @@ import React from "react";
 import "./Homepage_style.css";
 import { aboutBG } from "../../assets/imgMangaer";
 import { About } from "../../components/home_page/about";
-import { CaseStudySection } from "../../components/CaseStudy/CaseStudy";
+import { CaseStudySection } from "../../components/home_page/case_study";
 import { PanelFaultSection } from "../../components/PanelFault/PanelFault";
 import { BookADemoSection } from "../../components/home_page/book_a_demo";
 import { FooterSection } from "../../components/HomePageFooter/Footer";
