@@ -1,7 +1,7 @@
 import "./styles.css";
 import Homepage from "./Homepage";
 import { DroneOperator } from "./DroneOperator/drone-operator";
-import ResponsiveAppBar from "../components/About/AppBar/AppBar";
+import ResponsiveAppBar from "../components/app_bar";
 import { Route, Routes } from "react-router";
 
 export default function App() {

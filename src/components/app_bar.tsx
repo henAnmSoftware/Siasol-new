@@ -11,11 +11,8 @@ import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
-import AdbIcon from "@mui/icons-material/Adb";
-import "./AppBar_style.css";
-import { ReactComponent as ReactLogo } from "../../../assets/siasol_logo_square.svg";
-import { SvgIcon } from "@mui/material";
-import { siasolLogo } from "assets/imgMangaer";
+import "./app_bar.css";
+import { siasolLogo } from "../public/assets/imgMangaer";
 import { useNavigate } from "react-router";
 
 const pages = [
