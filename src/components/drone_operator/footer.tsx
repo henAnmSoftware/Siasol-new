@@ -5,6 +5,13 @@ import { ReactComponent as ReactLogo } from "../../assets/siasol_logo_square.svg
 import { saveAs } from 'file-saver';
 
 export const FooterSection = () => {
+  const jumpToContactUs = (id) => {
+    console.log('jumpToContactUs clicked');
+    
+    const releventDiv = document.getElementById(id);
+    // behavior: "smooth" parameter for smooth movement
+    releventDiv?.scrollIntoView({ behavior: "smooth" });
+  };
   const downloadMedia = async () => {
     const proxyUrl = 'http://localhost:3001/download-media';
 
@@ -32,10 +39,10 @@ export const FooterSection = () => {
         <div className="footer-bottom-container">
           <div className="footer-bottom-left-container">
             <div className="footer-bottom-left-menu-container">
-              <p>About</p>
-              <p>Case Study</p>
-              <p>Panel Fault</p>
-              <p>Contact Us</p>
+            <button onClick={() => jumpToContactUs('About')}>About</button>
+              <button onClick={() => jumpToContactUs('CaseStudy')}>Case Study</button>
+              <button onClick={() => jumpToContactUs('PanelFault')}>Panel Fault</button>
+              <button onClick={() => jumpToContactUs('ContactUs')}>Contact Us</button>
             </div>
           </div>
           <div className="footer-bottom-right-container">

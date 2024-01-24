@@ -11,7 +11,7 @@ const caseStudies = [
   {
     title: "Roof Installation",
     description:
-      "A very common installation type with multiple safety hazards presented to the O&M teams. Siasol offers a pinpoint location of faulty panels in order to reduce the necessary costs involved in high altitude labor",
+      "Drone footage offering quick coverage and high resolution imaging, and our proprietary algorithms capable of handling large volumes of footage Siasol’s ability to analyze video footage allows us to easily detect faults in hard to reach installations.",
     mediaRight:
       "https://storage.googleapis.com/siasol-upload/detection_flights/65649338133cf77e58f81ee3/raw/thermal/DJI_20231123093126_0001_T.MP4",
     mediaLeft:
@@ -20,14 +20,14 @@ const caseStudies = [
   {
     title: "Floating Sites",
     description:
-      "Siasol’s ability to analyze video footage allows us to easily detect faults in hard to reach installations with custom surfaces such as water reservoirs.",
+      "Water reservoirs offer great opportunity for Pv installations, but suffer from excessive bird dropping and sedimentary dirt that causes major hotspots problem.",
     mediaRight: floatingRightImg,
     mediaLeft: floatingLeftImg,
   },
   {
     title: "Ground Mounted ",
     description:
-      "Large sites are no longer an issue, with drone footage offering quick coverage and high resolution imaging, and our proprietary algorithms capable of handling large volumes of footage.",
+      "Large sites are no longer an issue, with Siasol’s system O&M teams can pinpoint a single faulty panel in isolated locations,  reducing the necessary costs and labor.",
     mediaRight: groundMoutedRightImg,
     mediaLeft: groundMoutedLeftImg,
   },

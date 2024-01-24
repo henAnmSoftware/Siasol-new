@@ -8,10 +8,14 @@ import {
   classifiersIcon,
 } from "../../public/assets/imgMangaer";
 
-var w = window.innerWidth;
-console.log("w", w);
-
 const VideoContainer = () => {
+  const jumpToContactUs = (id) => {
+    console.log('jumpToContactUs clicked');
+    
+    const releventDiv = document.getElementById(id);
+    // behavior: "smooth" parameter for smooth movement
+    releventDiv?.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className="video_container">
       <video src={aboutBGVideo} autoPlay loop muted />
@@ -27,7 +31,8 @@ const VideoContainer = () => {
           </h4>
         </div>
         <div className="buttons_video_container">
-          <button className="contact-us-button-video">Contact Us</button>
+          <button onClick={() => jumpToContactUs("ContactUs")
+          } className="contact-us-button-video">Contact Us</button>
           <button className="dashboard-button-video">Dashboard</button>
         </div>
       </div>

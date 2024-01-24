@@ -97,8 +97,8 @@ export default function Form() {
             {...register("locationCoverage", { pattern: /^[A-Za-z]+$/i })}
           />
           <p>{errors.locationCoverage?.message}</p>
-        </div>
         <input type="submit" value="Send" />
+        </div>
       </form>
     </div>
   );

@@ -44,7 +44,7 @@ const ColumnView = () => {
           <h4 className="bookADemo-line-3">
             a <strong>free demo</strong> of our portal
           </h4>
-          <button onClick={() => console.log('123')} className="bookADemo-button">Book a demo</button>
+          <button onClick={() => jumpToContactUs()} className="bookADemo-button">Book a demo</button>
         </div>
       </div>
     </div>

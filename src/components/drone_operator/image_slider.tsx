@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
-export function ImageSlider({ imageUrls }) {
+export function ImageSlider({ imageUrls, component }) {
   const [imageIndex, setImageIndex] = useState(0);
 
   return (

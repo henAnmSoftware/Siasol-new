@@ -117,8 +117,8 @@ export default function Form() {
           />
           <p>{errors.siteSize?.message}</p>
 
-        </div>
         <input type="submit" value="Send" />
+        </div>
       </form>
     </div>
   );

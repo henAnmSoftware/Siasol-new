@@ -12,37 +12,37 @@ const panelFaults = [
   {
     title: "Hotspot",
     description:
-      "Dirty panels can develop long term damage in the form of hotspots. Left untreated, these can lead to major burns and full out electrical fire.",
+      "Panels can develop long term damage in the form of hotspots. left untreated, it can lead to backsheet burnouts and electrical fire.",
     iconSrc: hotspotImg,
   },
   {
     title: "PID",
     description:
-      "Dirty panels can develop long term damage in the form of hotspots. Left untreated, these can lead to major burns and full out electrical fire.",
+      "Potential-induced performance degradation is caused by so-called stray currents. This effect may cause power loss of up to 30 percent.",
     iconSrc: PIDImg,
   },
   {
     title: "Multiple Hotspots",
     description:
-      "Dirty panels can develop long term damage in the form of hotspots. Left untreated, these can lead to major burns and full out electrical fire.",
+      "If the root cause for hotspots isn’t identified and taken care of, multiple hotspots can develop, further decreasing the output and increasing risk.",
     iconSrc: multiHotspotImg,
   },
   {
     title: "Burned Diodes",
     description:
-      "Dirty panels can develop long term damage in the form of hotspots. Left untreated, these can lead to major burns and full out electrical fire.",
+      "Diodes prevent back current from damaging the cells in the panel. When one or more is burned, the panel output is dramatically reduced and its neighboring effect increases.",
     iconSrc: burnedDiodesImg,
   },
   {
     title: "Shading",
     description:
-      "Large sites are no longer an issue, with drone footage offering quick coverage and high resolution imaging, and our proprietary algorithms capable of handling large volumes of footage.",
+      "Shaded panels not only produce less electrical energy, but can also develop permanent damage like hotspot, optimizer failure, and can affect neighboring panels and inverters.",
     iconSrc: shadingImg,
   },
   {
     title: "Disconnected string",
     description:
-      "Large sites are no longer an issue, with drone footage offering quick coverage and high resolution imaging, and our proprietary algorithms capable of handling large volumes of footage.",
+      "Faulty panels in a string can severely affect its electrical behavior, up to to point when the inverter disconnects the entire string.",
     iconSrc: disconnectedStringImg,
   },
 ];
