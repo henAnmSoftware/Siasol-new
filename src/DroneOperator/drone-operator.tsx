@@ -241,6 +241,11 @@ export function DroneOperator() {
     <div className="drone-operator">
       <div className="scroll">
         <header>Drone Operator instruction</header>
+        <section className="floating-text">
+          Our advanced AI system can handle different types of images and video
+          footage. However, to get the most accurate results, please follow our
+          drone operator's guide:
+        </section>
         <section className="instructions-container">
           <ItemList data={conditions} changeClass={null} />
           <ItemList data={cameraSpecs} changeClass={null} />

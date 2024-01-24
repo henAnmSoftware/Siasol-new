@@ -36,13 +36,13 @@ const panelFaults = [
   {
     title: "Shading",
     description:
-      "Large sites are no longer an issue, with drone footage offering quick coverage and high resolution imaging,<br/>and our proprietary algorithms capable of handling large volumes of footage.",
+      "Large sites are no longer an issue, with drone footage offering quick coverage and high resolution imaging, and our proprietary algorithms capable of handling large volumes of footage.",
     iconSrc: shadingImg,
   },
   {
     title: "Disconnected string",
     description:
-      "Large sites are no longer an issue, with drone footage offering quick coverage and high resolution imaging,<br/>and our proprietary algorithms capable of handling large volumes of footage.",
+      "Large sites are no longer an issue, with drone footage offering quick coverage and high resolution imaging, and our proprietary algorithms capable of handling large volumes of footage.",
     iconSrc: disconnectedStringImg,
   },
 ];

@@ -14,11 +14,11 @@ export const Homepage = () => {
   return (
     <div className="bg_container">
       <ResponsiveAppBar />
-      <About />
+      {/* <About />
       <CaseStudySection />
       <PanelFaultSection />
       <BookADemoSection />
-      <FooterSection />
+      <FooterSection /> */}
     </div>
   );
 };

@@ -10,7 +10,7 @@
   font-size: 4.5rem;
   font-weight: bold;
   padding: 65px 0;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
 
 .orange-background-text {
@@ -29,8 +29,9 @@
 
 .floating-text {
   font-weight: bold;
-  width: 40%;
-  font-size: 20px;
+  /* width: 40%; */
+  padding: 0 20%;
+  font-size: 24px;
   margin: auto;
   margin-bottom: 100px;
 }
@@ -74,5 +75,6 @@
   .floating-text {
     font-size: 16px;
     width: 90%;
+    padding: 0;
   }
 }

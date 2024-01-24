@@ -42,7 +42,7 @@ const services = [
   {
     iconSrc: solarEnergyIcon,
     description:
-      "A GreenPanel spinoff: Israel largest solar O&M service providers",
+      "An AI software company with strong background in the renewable energy market.",
   },
   {
     iconSrc: databaseIcon,
@@ -84,19 +84,19 @@ const ServicesContainer = () => {
       </div>
       <div className="who-are-we">
         <p className="who-are-we-text">
-          Siasol is a spinoff company of GreenPanel,Israel largest solar O&M 
-          service provider.
+          Siasol is an AI software company with strong background in the
+          renewable energy market.
           <br />
           We own the world’s largest tagged dataset of PV panel.
         </p>
         <p className="who-are-we-text">
-          Siasol is constantly developing the most cutting edge tools for
+          We are constantly developing the most cutting edge tools for
           predictive O&M, advanced monitoring
           <br />
           and data driven management services.
         </p>
         <p className="who-are-we-text">
-          Siasol uses video footage, reducing the time required for imaging, and
+          We use video footage, reducing the time required for imaging, and fast
           AI algorithms that can accurately
           <br />
           detect known faults.

@@ -1,6 +1,7 @@
 import "./BookADemo_style.css";
 import { siasolPoralOnMacImg } from "../../../assets/imgMangaer";
 import { Fragment } from "react";
+import { useMatchMedia } from "../../../hooks/useMatchMedia";
 
 const RowView = () => {
   return (
@@ -44,10 +45,8 @@ const ColumnView = () => {
 };
 
 export const BookADemoSection = () => {
+  const isDesktopResolution = useMatchMedia("(min-width:1024px)", true);
   return (
-    <Fragment>
-      <RowView />
-      <ColumnView />
-    </Fragment>
+    <Fragment>{isDesktopResolution ? <RowView /> : <ColumnView />}</Fragment>
   );
 };

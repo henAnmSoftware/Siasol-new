@@ -20,14 +20,14 @@ const caseStudies = [
   {
     title: "Floating Sites",
     description:
-      "Siasol’s ability to analyze video footage allows us to easily detect faults in hard<br/>to reach installations with custom surfaces such as water reservoirs.",
+      "Siasol’s ability to analyze video footage allows us to easily detect faults in hard to reach installations with custom surfaces such as water reservoirs.",
     mediaRight: floatingRightImg,
     mediaLeft: floatingLeftImg,
   },
   {
     title: "Ground Mounted ",
     description:
-      "Large sites are no longer an issue, with drone footage offering quick coverage and high resolution imaging,<br/>and our proprietary algorithms capable of handling large volumes of footage.",
+      "Large sites are no longer an issue, with drone footage offering quick coverage and high resolution imaging, and our proprietary algorithms capable of handling large volumes of footage.",
     mediaRight: groundMoutedRightImg,
     mediaLeft: groundMoutedLeftImg,
   },

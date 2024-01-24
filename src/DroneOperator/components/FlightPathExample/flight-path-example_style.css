@@ -3,19 +3,23 @@
   margin-bottom: 100px;
 }
 .flight-path-container h2 {
-  background-color: #fa9924;
   margin: auto;
   padding-bottom: 50px;
   padding-top: 20px;
   font-weight: bold;
 }
-
 .background-color {
-  background-color: #fa9924;
-  /* position: absolute; */
-  z-index: -1;
-  padding-top: 20px;
+  background: linear-gradient(
+    to bottom,
+    #fa9924 25%,
+    #fff 20%,
+    #fff 55%,
+    #fa9924 51%,
+    #fa9924 70%,
+    #fff 70%
+  );
 }
+
 .flight-path-container p {
   font-size: 20px;
   margin: auto;
@@ -36,7 +40,7 @@
   gap: 30px;
 }
 .image-container span {
-  background-color: #fa9924;
+  /* background-color: #fa9924; */
   position: absolute;
   z-index: -1;
   height: 20%;
@@ -51,7 +55,15 @@
   }
 
   .background-color {
-    margin-bottom: 50px;
+    background: linear-gradient(
+      to bottom,
+      #fa9924 35%,
+      #fff 20%,
+      #fff 55%,
+      #fa9924 53%,
+      #fa9924 80%,
+      #fff 70%
+    );
   }
 }
 
