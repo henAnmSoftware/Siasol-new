@@ -14,10 +14,10 @@ export function FlightPathExamples({ flightPathExamples }) {
         {flightPathExamples.map((example) => {
           return (
             <div key={example.id} className="example">
-              <h6>
+              <h6 style={{marginTop: 10}} >
                 <span className="bold">{example.title}</span>
               </h6>
-              <p>{example.paragraph}</p>
+              <p style={{marginBottom: 20}}>{example.paragraph}</p>
 
               <div>
                 {isDesktopResolution ? (

@@ -1,7 +1,7 @@
-.footer-section-container {
+.home-footer-section-container {
     display: flex;
     flex-direction: column;
-    height: 1242px; /* Set your desired minimum height */
+    /* height: 1242px; Set your desired minimum height */
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -9,10 +9,11 @@
     background-repeat: no-repeat;
   }
   
-  .footer-inner-container {
+  .home-footer-inner-container {
     display: flex;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
+    gap: 30px;
     flex-direction: column;
     background-image: linear-gradient(
       to top,
@@ -22,23 +23,24 @@
     );
   }
   
-  .footer-top-container {
+  .home-footer-top-container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 70%;
     width: 100%;
+    margin-top: 100px;
     /* border: 3px pink solid; */
   }
   
-  .footer-bottom-container {
+  .home-footer-bottom-container {
     display: flex;
     height: 30%;
     width: 100%;
     /* border: 3px green solid; */
   }
   
-  .footer-bottom-left-container {
+  .home-footer-bottom-left-container {
     display: flex;
     align-items: flex-end;
     flex: 1;
@@ -48,7 +50,7 @@
     padding-left: 10%;
   }
   
-  .footer-bottom-left-menu-container {
+  .home-footer-bottom-left-menu-container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -59,11 +61,14 @@
     margin-bottom: 50px;
   }
   
-  .footer-bottom-left-menu-container p {
+  .home-footer-bottom-left-menu-container button {
     color: white;
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    margin-bottom: 5px;
   }
-  
-  .footer-bottom-right-container {
+  .home-footer-bottom-right-container {
     display: flex;
     align-items: flex-end;
     flex: 1;
@@ -73,7 +78,7 @@
     padding-right: 10%;
   }
   
-  .footer-bottom-right-logo-container {
+  .home-footer-bottom-right-logo-container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -84,15 +89,15 @@
     margin-bottom: 50px;
   }
   
-  .logo {
+  .home-logo {
     width: 80px;
     /* margin-right: 30px; */
   }
-  input[type="submit"] {
+input[type="submit"] {
     cursor: pointer;
   }
   @media only screen and (max-width: 767px) {
-    .footer-section-container {
+    .home-footer-section-container {
       flex: 1;
       /* height: 1000px; */
       width: 100%;
@@ -101,7 +106,7 @@
       /* padding-bottom: 30px; */
     }
   
-    .footer-top-container {
+    .home-footer-top-container {
       padding-top: 20px;
     }
   }
