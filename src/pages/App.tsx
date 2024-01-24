@@ -1,6 +1,6 @@
 import "./styles.css";
-import Homepage from "./Homepage";
-import { DroneOperator } from "./DroneOperator/drone-operator";
+import { Homepage } from "./home_page/index.page";
+import { DroneOperator } from "./drone_operator/index.page";
 import ResponsiveAppBar from "../components/app_bar";
 import { Route, Routes } from "react-router";
 
