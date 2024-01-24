@@ -3,7 +3,7 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import emailjs from '@emailjs/browser';
-import "./Form_style.css";
+import "./form.css";
 
 const nameRegex = /^[A-Za-z]+$/;
 const siteLocationRegex = /^[A-Za-z\d,]+$/;

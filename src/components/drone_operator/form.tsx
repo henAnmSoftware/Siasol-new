@@ -4,7 +4,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import emailjs from '@emailjs/browser';
 
-import "./Form_style.css";
+import "./form.css";
 
 const nameRegex = /^[A-Za-z]+$/;
 const locationRegex = /^[A-Za-z\d,]+$/;

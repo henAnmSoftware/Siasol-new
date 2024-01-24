@@ -1,9 +1,22 @@
-import "./Footer_style.css";
-import { footerImg, footerShadowImg } from "../../assets/imgMangaer";
-import Form from "./Form/Form";
+import "./footer.css";
+import { footerImg } from "../../assets/imgMangaer";
+import Form from "./form";
 import { ReactComponent as ReactLogo } from "../../assets/siasol_logo_square.svg";
+import { saveAs } from 'file-saver';
 
 export const FooterSection = () => {
+  const downloadMedia = async () => {
+    const proxyUrl = 'http://localhost:3001/download-media';
+
+    try {
+      const response = await fetch(proxyUrl);
+      const blob = await response.blob();
+  
+      saveAs(blob, 'downloaded-media.mp4');
+    } catch (error) {
+      console.error('Error downloading media:', error);
+    }
+  };
   return (
     <div
       id="ContactUs"
@@ -12,6 +25,8 @@ export const FooterSection = () => {
     >
       <div className="footer-inner-container">
         <div className="footer-top-container">
+        {/* <button onClick={downloadMedia}>Download Media</button> */}
+
           <Form />
         </div>
         <div className="footer-bottom-container">
