@@ -25,7 +25,7 @@ const pages = [
   { id: "DroneOperator", name: "Drone Operator" },
   { id: "ContactUs", name: "Contact Us" },
 ];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const settings = ["Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
   const navigate = useNavigate();

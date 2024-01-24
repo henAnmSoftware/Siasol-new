@@ -1,11 +1,13 @@
-import ReactDOM from "react-dom";
+import {useRef} from 'react'
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import emailjs from '@emailjs/browser';
+
 import "./Form_style.css";
 
 const nameRegex = /^[A-Za-z]+$/;
-const siteLocationRegex = /^[A-Za-z\d,]+$/;
+const locationRegex = /^[A-Za-z\d,]+$/;
 
 const schema = yup
   .object({
@@ -13,29 +15,8 @@ const schema = yup
       .string()
       .matches(nameRegex, "Only English letters")
       .required("Required *"),
-    company: yup
-      .string()
-      .matches(nameRegex, "Only English letters")
-      .required("Required *"),
-    // siteLocation: yup
-    //   .string()
-    //   .matches(siteLocationRegex, "Only English letters")
-    //   .required("Required")
-    //   .max(600),
-    // siteSize: yup
-    //   .number()
-    //   .typeError("Please enter a valid number")
-    //   .transform((value, originalValue) => {
-    //     // Convert empty string to undefined or null
-    //     return originalValue === "" ? undefined : value;
-    //   })
-    //   .positive("Please enter a positive number")
-    //   .integer("Please enter an integer")
-    //   .min(50, "Number must be in the range of 50-1000")
-    //   .max(1000, "Number must be in the range of 50-1000")
-    //   .required("Please provide a value"),
-    email: yup.string().email("must be a valid email").required(),
-    phoneNumber: yup
+      email: yup.string().email("must be a valid email").required(),
+      phoneNumber: yup
       .number()
       .typeError("Please enter a valid number")
       .transform((value, originalValue) =>
@@ -43,16 +24,24 @@ const schema = yup
       )
       .positive("Please enter a positive number")
       .integer("Please enter an integer"),
+      organization: yup
+      .string()
+      .matches(nameRegex, "Only English letters")
+      .required("Required *"),
+      locationCoverage: yup
+      .string()
+      .matches(locationRegex, "Only English letters")
+      .required("Required")
+      .max(600),
   })
   .required();
 
 interface IFormInput {
   fullName: string;
-  company: string;
-  siteLocation: string;
-  // siteSize: number;
   email: string;
   phoneNumber: number;
+  organization: string;
+  locationCoverage: string;
 }
 
 export default function Form() {
@@ -63,12 +52,24 @@ export default function Form() {
   } = useForm<IFormInput>({
     resolver: yupResolver(schema),
   });
-  const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data);
+  const form = useRef();
+
+  const onSubmit: SubmitHandler<IFormInput> = (data) => {
+    console.log(JSON.stringify(data))
+    // console.log(JSON.stringify(form.current))
+    emailjs.sendForm('service_gw0czkj', 'template_7ni5e8y', form.current,'XFrV1RCTxGzAjWYVJ')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+
+  };
 
   return (
     <div className="lets-contact-container">
       <h3>Enter the details below to upload a new site</h3>
-      <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
+      <form ref={form} className="form-container" onSubmit={handleSubmit(onSubmit)}>
         <div className="form-fields">
           <input
             placeholder="Full Name"
@@ -76,35 +77,26 @@ export default function Form() {
           />
           <p>{errors.fullName?.message}</p>
           <input
-            placeholder="Company"
-            {...register("company", { pattern: /^[A-Za-z]+$/i })}
-          />
-          <p>{errors.company?.message}</p>
-
-          {/* <input
-            placeholder="Site Location"
-            {...register("siteLocation", { pattern: /^[A-Za-z]+$/i })}
-          />
-          <p>{errors.siteLocation?.message}</p> */}
-
-          {/* <input
-            placeholder="Site Size (kWp)"
-            type="number"
-            {...register("siteSize", { min: 50, max: 1000 })}
-          />
-          <p>{errors.siteSize?.message}</p> */}
-
-          <input
             placeholder="Email Address"
             {...register("email", { pattern: /^[A-Za-z]+$/i })}
           />
           <p>{errors.email?.message}</p>
-
           <input
             placeholder="Phone Number"
             {...register("phoneNumber", { pattern: /^[A-Za-z]+$/i })}
           />
           <p>{errors.phoneNumber?.message}</p>
+          <input
+            placeholder="Organization"
+            {...register("organization", { pattern: /^[A-Za-z]+$/i })}
+          />
+          <p>{errors.organization?.message}</p>
+
+          <input
+            placeholder="Location Coverage"
+            {...register("locationCoverage", { pattern: /^[A-Za-z]+$/i })}
+          />
+          <p>{errors.locationCoverage?.message}</p>
         </div>
         <input type="submit" value="Send" />
       </form>

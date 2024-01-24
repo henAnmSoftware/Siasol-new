@@ -1,7 +1,8 @@
-import ReactDOM from "react-dom";
+import {useRef} from 'react'
 import { useForm, SubmitHandler } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
+import emailjs from '@emailjs/browser';
 import "./Form_style.css";
 
 const nameRegex = /^[A-Za-z]+$/;
@@ -13,7 +14,7 @@ const schema = yup
       .string()
       .matches(nameRegex, "Only English letters")
       .required("Required *"),
-    company: yup
+      organization: yup
       .string()
       .matches(nameRegex, "Only English letters")
       .required("Required *"),
@@ -48,11 +49,11 @@ const schema = yup
 
 interface IFormInput {
   fullName: string;
-  company: string;
-  siteLocation: string;
-  siteSize: number;
   email: string;
   phoneNumber: number;
+  organization: string;
+  siteLocation: string;
+  siteSize: number;
 }
 
 export default function Form() {
@@ -63,12 +64,24 @@ export default function Form() {
   } = useForm<IFormInput>({
     resolver: yupResolver(schema),
   });
-  const onSubmit: SubmitHandler<IFormInput> = (data) => console.log(data);
+  const form = useRef();
+
+  const onSubmit: SubmitHandler<IFormInput> = (data) => {
+    console.log(JSON.stringify(data))
+    // console.log(JSON.stringify(form.current))
+    emailjs.sendForm('service_gw0czkj', 'template_59v4nhq', form.current,'XFrV1RCTxGzAjWYVJ')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+
+  };
 
   return (
     <div className="lets-contact-container">
       <h3>Let׳s Contact</h3>
-      <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
+      <form ref={form} className="form-container" onSubmit={handleSubmit(onSubmit)}>
         <div className="form-fields">
           <input
             placeholder="Full Name"
@@ -76,10 +89,20 @@ export default function Form() {
           />
           <p>{errors.fullName?.message}</p>
           <input
-            placeholder="Company"
-            {...register("company", { pattern: /^[A-Za-z]+$/i })}
+            placeholder="Email Address"
+            {...register("email", { pattern: /^[A-Za-z]+$/i })}
           />
-          <p>{errors.company?.message}</p>
+          <p>{errors.email?.message}</p>
+          <input
+            placeholder="Phone Number"
+            {...register("phoneNumber", { pattern: /^[A-Za-z]+$/i })}
+          />
+          <p>{errors.phoneNumber?.message}</p>
+          <input
+            placeholder="Organization"
+            {...register("organization", { pattern: /^[A-Za-z]+$/i })}
+          />
+          <p>{errors.organization?.message}</p>
 
           <input
             placeholder="Site Location"
@@ -94,17 +117,6 @@ export default function Form() {
           />
           <p>{errors.siteSize?.message}</p>
 
-          <input
-            placeholder="Email Address"
-            {...register("email", { pattern: /^[A-Za-z]+$/i })}
-          />
-          <p>{errors.email?.message}</p>
-
-          <input
-            placeholder="Phone Number"
-            {...register("phoneNumber", { pattern: /^[A-Za-z]+$/i })}
-          />
-          <p>{errors.phoneNumber?.message}</p>
         </div>
         <input type="submit" value="Send" />
       </form>

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Homepage_style.css";
 import { aboutBG } from "../../assets/imgMangaer";
-import { About } from "../../components/About/About";
+import { About } from "../../components/home_page/about";
 import { CaseStudySection } from "../../components/CaseStudy/CaseStudy";
 import { PanelFaultSection } from "../../components/PanelFault/PanelFault";
 import { BookADemoSection } from "../../components/BookADemo/BookADemo";
