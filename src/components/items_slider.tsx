@@ -1,4 +1,4 @@
-import "./items-slider_style.css";
+import "./items_slider.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";

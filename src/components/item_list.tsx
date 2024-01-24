@@ -1,4 +1,4 @@
-import "./item-list_style.css";
+import "./item_list.css";
 
 export function ItemList({ data, changeClass }) {
   return (
