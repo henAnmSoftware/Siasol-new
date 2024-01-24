@@ -4,9 +4,8 @@ import { aboutBG } from "../../assets/imgMangaer";
 import { About } from "../../components/home_page/about";
 import { CaseStudySection } from "../../components/CaseStudy/CaseStudy";
 import { PanelFaultSection } from "../../components/PanelFault/PanelFault";
-import { BookADemoSection } from "../../components/BookADemo/BookADemo";
+import { BookADemoSection } from "../../components/home_page/book_a_demo";
 import { FooterSection } from "../../components/HomePageFooter/Footer";
-import ResponsiveAppBar from "../../components/About/AppBar/AppBar";
 import { register } from "swiper/element/bundle";
 
 export const Homepage = () => {

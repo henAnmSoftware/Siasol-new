@@ -1,0 +1,121 @@
+.bookADemo-row-view-section-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 860px;
+    width: 100%;
+  }
+  
+  .bookADemo-left-container {
+    display: flex;
+    height: 527px;
+    flex: 1;
+    background: linear-gradient(
+      to right,
+      #fa9924 0%,
+      #fa9924 40%,
+      #fff 40%,
+      #fff 100%
+    );
+  }
+  
+  .bookADemo-orange-container {
+    /* width: 30%; */
+  }
+  
+  .bookADemo-texts-container {
+    display: flex;
+    padding-left: 45%;
+    flex-direction: column;
+    width: 75%;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .bookADemo-texts-container h4 {
+    text-align: left;
+  }
+  
+  .bookADemo-line-1 {
+  }
+  
+  .bookADemo-line-2 {
+    color: #fa9924;
+  }
+  
+  .bookADemo-line-3 {
+  }
+  
+  .bookADemo-button {
+    font-weight: 700;
+    padding: 5px 30px;
+    cursor: pointer;
+    display: block;
+    border: 0px;
+    border-radius: 18px;
+    background: #fa9924;
+    color: black;
+    width: 230px;
+  }
+  
+  .bookADemo-right-container {
+    height: 527px;
+    width: 721px;
+  }
+  
+  .bookADemo-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* Mobile Styles */
+  @media only screen and (max-width: 767px) {
+    /* Add your mobile styles here */
+    .bookADemo-row-view-section-container {
+      display: none;
+    }
+  
+    .bookADemo-column-view-section-container {
+      display: flex;
+      flex-direction: column;
+      height: 527px;
+      flex: 1;
+      align-items: flex-end;
+      background: linear-gradient(
+        to right,
+        #fa9924 0%,
+        #fa9924 20%,
+        #fff 20%,
+        #fff 100%
+      );
+    }
+  
+    .bookADemo-top-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50%;
+      width: 80%;
+    }
+  
+    .bookADemo-image {
+      height: 80%;
+      width: 80%;
+    }
+  
+    .bookADemo-bottom-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50%;
+      width: 80%;
+    }
+  
+    .bookADemo-texts-container {
+      padding: 0;
+    }
+  }
+  
