@@ -1,4 +1,4 @@
-import "./PanelFault_style.css";
+import "./panel_fault.css";
 import {
   hotspotImg,
   PIDImg,
@@ -6,7 +6,7 @@ import {
   burnedDiodesImg,
   shadingImg,
   disconnectedStringImg,
-} from "../../assets/imgMangaer";
+} from "../../public/assets/imgMangaer";
 
 const panelFaults = [
   {

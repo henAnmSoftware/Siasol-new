@@ -1,0 +1,84 @@
+.panelFault-section-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 860px;
+    width: 100%;
+    background-color: #2d2d2d;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .panel-fault-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+  }
+  
+  .panel-fault-title {
+    font-weight: bold;
+    color: #fa9924;
+  }
+  
+  .items-container {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+  
+  .panel-fault-container {
+    display: flex;
+    height: 580px;
+    width: 380px;
+    border: 1px #fff solid;
+    padding-top: 10px;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .panel-fault-img-container {
+    height: 280px;
+    width: 350px;
+  }
+  
+  .panel-fault-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .panel-fault-texts-container {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    text-align: left;
+    gap: 15px;
+    /* padding: 10px; */
+  }
+  
+  .panel-fault-item-title {
+    font-weight: bold;
+    color: white;
+  }
+  
+  .panel-fault-item-subtitle {
+    color: white;
+  }
+  
+  /* Mobile Styles */
+  @media only screen and (max-width: 767px) {
+    /* Add your mobile styles here */
+    .panel-fault-img-container {
+      width: 280px;
+      height: 310px;
+    }
+    .panel-fault-texts-container {
+      width: 280px;
+    }
+  }
+  
