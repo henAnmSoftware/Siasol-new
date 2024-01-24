@@ -1,7 +1,7 @@
 {
     "include": [
         "./src/*/"
-    ],
+, "src/pages/App.tsx"    ],
     "compilerOptions": {
         "strict": true,
         "esModuleInterop": true,
